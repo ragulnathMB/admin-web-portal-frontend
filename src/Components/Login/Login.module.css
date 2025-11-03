@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  background: #0D2847;
+}
+
+.leftPane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0D2847;
+  color: white;
+  animation: fadeInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 32px;
+  /* logo image will be placed as a child */
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 16px 0 6px 0;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: #b0bec5;
+  margin-bottom: 10px;
+}
+
+.rightPane {
+  width: 410px;
+  max-width: 98vw;
+  background: #fff;
+  box-shadow: -8px 0 40px rgba(40,60,115,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 56px 44px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInRight 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.welcome {
+  font-size: 1.21rem;
+  font-weight: 600;
+  color: #11182A;
+  margin-bottom: 4px;
+}
+
+.loginPrompt {
+  font-size: 1.06rem;
+  color: #3a425d;
+  margin-bottom: 26px;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  background: #fff;
+  border: 1.2px solid #ebebf7;
+  border-radius: 7px;
+  height: 48px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #21242a;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.25s, border 0.18s, transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 1.5px 6px rgba(120,120,180,0.07);
+  gap: 13px;
+  padding: 0 15px;
+}
+
+.button:hover {
+  box-shadow: 0 6px 28px rgba(58, 66, 115, 0.18);
+  border: 1.4px solid #a5bee6;
+  transform: translateY(-2px) scale(1.022);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+  .rightPane {
+    width: 100vw;
+    min-height: 280px;
+    align-items: center;
+    padding: 36px 9vw;
+  }
+  .leftPane {
+    min-height: 240px;
+    padding-top: 22px;
+    padding-bottom: 18px;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}

@@ -1,0 +1,125 @@
+.main{
+    height: 80vh;
+    background-color: #08254A; 
+    width: 209px;
+    border-radius: 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 20px;
+    transition: 0.1s ease;
+    animation: fade 0.5s ease;
+    overflow: hidden;
+    
+
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        
+        opacity: 1;
+    }
+}
+.controller{
+    background-color: #08254A;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 5;
+}
+.controller:hover{
+    background-color: #0b3163;
+}
+.main div p{
+    display: none;
+}
+.main div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.main:hover{
+    width: 209px;
+}
+.main div p{
+    display: block;
+}
+.main div{
+    justify-content: left;
+}
+.main .item{
+    width: 80%;
+}
+
+
+.vertical_bg{
+    width: 300px;
+    height: 300px;
+    z-index: 5;
+    position: relative;
+    top: 160px;
+    left: 20px;
+    
+
+}
+.item{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    border-radius: 4px;
+    height: 40px;
+    z-index: 5;
+    padding-left: 10px;
+}
+.item img{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.subItem{
+    background-color: transparent;
+    width: 80%;
+    color: rgb(247, 247, 248);
+}
+.subItem div{
+    padding-left: 20%;
+}
+.hamburger{
+    width: 50px;
+    height: 50px;
+    background-color: #08254A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: fixed;
+    left: 30px;
+    top: 100px;
+}
+
+@media (max-width:750px){
+    .main{
+        font-size: 11px;
+        width: 209px;
+        z-index: 5;
+    }
+    .mainOuter{
+        left: 7px;
+    }
+    
+}

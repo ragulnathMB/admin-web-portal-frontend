@@ -1,0 +1,71 @@
+.mainContainer{
+    width: 95vw;
+    height: 81px;
+    background-color: #08254A; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.titleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 32px;
+    margin-left: 20px;
+}
+.leftContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 38vw;
+    z-index: 3;
+}
+.bellContainer{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.profileContainer{
+    cursor: pointer;
+}
+.horizontal_bg{
+    width: 300px;
+    height: 150px;
+    z-index: 2;
+}
+@media (max-width: 950px){
+    .mainContainer{
+        width: 93vw;
+        height: 70px;
+    }
+    .logoContainer img{
+        width: 30px;
+    }
+    .titleContainer img{
+        width: 200px;
+    }
+    .profileContainer img{
+        width: 35px;
+        margin-right: -90px;
+    }
+}
+@media (max-width:490px){
+    .profileContainer{
+        position: relative;
+        right: 80px;
+    }
+}

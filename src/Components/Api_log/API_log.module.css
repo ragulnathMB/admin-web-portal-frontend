@@ -1,0 +1,143 @@
+.wrapper {
+  padding: 20px;
+  background: #f4f5f9;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.head p {
+  font-size: 32px;
+  font-weight: 590;
+  color: #08254A;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 10px;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+}
+
+.icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.inputBar input {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.tableContainer {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 0px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.table thead {
+  background: white;
+}
+tr{
+    height: 24px;
+}
+
+.table th {
+  text-align: left;
+  height: 24px;
+  padding-left: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+
+.table td {
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 400;
+  height: 24px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #E2E2E2;
+}
+
+.status{
+    margin: 0;
+    width: 80px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 3px;
+}
+.stat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuBar{
+    background-color: white;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    font-size: 12px;
+    font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    position: relative;
+    top: -20px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    min-width: 450px;
+}
+.menuButton{
+    cursor: pointer;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menuIcon{
+    height: 31px;
+    position: relative;
+    top:7px;
+}
+.testIcon{
+  cursor: pointer;
+  height: 15px;
+}
+.cont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.searchMain{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -14px;
+  margin-bottom: 5px;
+}
