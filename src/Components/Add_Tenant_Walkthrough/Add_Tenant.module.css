@@ -137,7 +137,7 @@
 }
 .sequence{
     position: relative;
-    left: 75%;
+    left: 50vw;
     bottom: 40px;
     font-size: 12px;
     display: inline;
